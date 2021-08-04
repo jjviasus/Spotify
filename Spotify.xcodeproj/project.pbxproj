@@ -12,6 +12,7 @@
 		D0404CFD26BAE08E008595B1 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0404CFC26BAE08E008595B1 /* APIImage.swift */; };
 		D0404CFF26BAE6C0008595B1 /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0404CFE26BAE6C0008595B1 /* FeaturedPlaylistsResponse.swift */; };
 		D0404D0126BAF669008595B1 /* RecommendedGenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0404D0026BAF669008595B1 /* RecommendedGenresResponse.swift */; };
+		D0404D0326BAFDE6008595B1 /* RecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0404D0226BAFDE6008595B1 /* RecommendationsResponse.swift */; };
 		D0669A7326B790B600D26186 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0669A7226B790B600D26186 /* TabBarViewController.swift */; };
 		D0669A7526B7912600D26186 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0669A7426B7912600D26186 /* SearchViewController.swift */; };
 		D0669A7726B7916700D26186 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0669A7626B7916700D26186 /* LibraryViewController.swift */; };
@@ -46,6 +47,7 @@
 		D0404CFC26BAE08E008595B1 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
 		D0404CFE26BAE6C0008595B1 /* FeaturedPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsResponse.swift; sourceTree = "<group>"; };
 		D0404D0026BAF669008595B1 /* RecommendedGenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGenresResponse.swift; sourceTree = "<group>"; };
+		D0404D0226BAFDE6008595B1 /* RecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsResponse.swift; sourceTree = "<group>"; };
 		D0669A7226B790B600D26186 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D0669A7426B7912600D26186 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D0669A7626B7916700D26186 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				D0404CFC26BAE08E008595B1 /* APIImage.swift */,
 				D0404CFE26BAE6C0008595B1 /* FeaturedPlaylistsResponse.swift */,
 				D0404D0026BAF669008595B1 /* RecommendedGenresResponse.swift */,
+				D0404D0226BAFDE6008595B1 /* RecommendationsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				D0669A8E26B7932100D26186 /* HapticsManager.swift in Sources */,
 				D06905BE26B858BB0040C09A /* AuthResponse.swift in Sources */,
 				D0404CFB26BADF8B008595B1 /* NewReleasesResponse.swift in Sources */,
+				D0404D0326BAFDE6008595B1 /* RecommendationsResponse.swift in Sources */,
 				D0669A9226B7934900D26186 /* AudioTrack.swift in Sources */,
 				D0669A7B26B7919900D26186 /* AuthViewController.swift in Sources */,
 				D0FBCFCB26B78DAA00BEAA58 /* AppDelegate.swift in Sources */,
