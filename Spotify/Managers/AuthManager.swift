@@ -131,7 +131,8 @@ final class AuthManager {
         }
     }
     
-    public func refreshIfNeeded(completion: @escaping (Bool) -> Void) {
+    public func refreshIfNeeded(completion: ((Bool) -> Void)?) { // completion block is optional b/c instead of waiting for an api call to go and refresh the token, in our app delegate what we are going to do is if the user is signed in let's already start refreshing the token if needed, but we don't want a completion handler for it. As soon as our app launches, it will start refreshing the token if needed. So we'll have a valid token right from the beginning.
+        
         // make sure we are not already refreshing
         guard !refreshingToken else {
             return
@@ -139,7 +140,7 @@ final class AuthManager {
         
         guard shouldRefreshToken else {
             // we don't need to refresh
-            completion(true)
+            completion?(true)
             return
         }
         
@@ -172,7 +173,7 @@ final class AuthManager {
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("Failure to get base64")
-            completion(false)
+            completion?(false)
             return
         }
         
@@ -182,7 +183,7 @@ final class AuthManager {
             self?.refreshingToken = false
             guard let data = data,
                   error == nil else {
-                completion(false)
+                completion?(false)
                 return
                 
             }
@@ -192,10 +193,10 @@ final class AuthManager {
                 self?.onRefreshBlocks.forEach { $0(result.access_token) } // for each, we can execute the block and pass back the token
                 self?.onRefreshBlocks.removeAll() // remove everything so we don't redudantly call one of the blocks we have saved
                 self?.cacheToken(result: result)
-                completion(true)
+                completion?(true)
             } catch {
                 print(error.localizedDescription)
-                completion(false)
+                completion?(false)
             }
         }
         task.resume()
