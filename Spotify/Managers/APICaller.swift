@@ -7,7 +7,22 @@
 
 import Foundation
 
-// Note: look up session tasks, JSONDecoder, Sets, and JSONSerialization.jsonObject in Swift
+// Note: look up session tasks, JSONDecoder, Sets, Result, and JSONSerialization.jsonObject in Swift
+
+// Session Tasks: ???
+
+// JSONDecoder: An object that decodes instances of a data type from JSON objects.
+
+// Set: an unordered collection of unique elements.
+//      You use a set instead of an array when:
+//      - you need to test efficiently for membership and you aren't concerned with the order of the elements in the collection
+//      - or when you need to ensure that each element appears only once in a collection
+
+// Result: A value that represents either a success or a failure, including an associated value in each case.
+
+// JSONSerialization: An object that converts between JSON and the equivalent Foundation objects.
+// .jsonObject: Returns a Foundation object from given JSON data.
+// We were using JSONSerialization.jsonObject to essentially getting raw json.
 
 final class APICaller {
     static let shared = APICaller() // we are going to use a shared instance of the APICaller

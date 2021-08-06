@@ -7,13 +7,14 @@
 
 import UIKit
 
+// Note: Look up discardables in swift
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // look up discardables in swift
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         

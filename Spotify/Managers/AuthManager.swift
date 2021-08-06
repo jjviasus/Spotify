@@ -89,11 +89,10 @@ final class AuthManager {
         request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
         
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, _, error in // weak self to prevent memory leak b/c we are in a closure
-            guard let data = data,
-                  error == nil else {
+            guard let data = data, error == nil else
+            {
                 completion(false)
                 return
-                
             }
             
             do {
@@ -185,7 +184,6 @@ final class AuthManager {
                   error == nil else {
                 completion?(false)
                 return
-                
             }
             
             do {

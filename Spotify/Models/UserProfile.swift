@@ -7,6 +7,9 @@
 
 import Foundation
 
+// Note: Codable: A type that can convert itself into and out of an external representation.
+
+// The type adopts Codable so that it's decodable using a JSONDecoder instance.
 struct UserProfile: Codable {
     let country: String
     let display_name: String

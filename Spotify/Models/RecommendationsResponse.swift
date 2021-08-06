@@ -7,8 +7,6 @@
 
 import Foundation
 
-// Note: Look up Codable in Swift
-
 struct RecommendationsResponse: Codable {
     let tracks: [AudioTrack]
 }
